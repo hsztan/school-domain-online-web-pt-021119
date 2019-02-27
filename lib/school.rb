@@ -18,8 +18,8 @@ class School
   end
 
   def sort
-    sorted_hash = @roster.sort.to_h
-    @sorted = sorted_hash.each do |grade, students|
+    @sorted_hash = @roster.sort.to_h
+    @sorted = @sorted_hash.each do |grade, students|
       students.sort
     end
     binding.pry
